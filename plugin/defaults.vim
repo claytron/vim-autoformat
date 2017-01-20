@@ -148,8 +148,8 @@ if !exists('g:formatdef_pyjsbeautify_javascript')
     let g:formatdef_pyjsbeautify_javascript = '"js-beautify -X -".(&expandtab ? "s ".shiftwidth() : "t").(&textwidth ? " -w ".&textwidth : "")." -"'
 endif
 
-if !exists('g:formatdef_jscs')
-    let g:formatdef_jscs = '"jscs -x"'
+if !exists('g:formatdef_eslint_javascript')
+    let g:formatdef_eslint_javascript = "'eslint --fix '.bufname('%')"
 endif
 
 if !exists('g:formatdef_standard_javascript')
@@ -160,7 +160,7 @@ if !exists('g:formatters_javascript')
     let g:formatters_javascript = [
                 \ 'jsbeautify_javascript',
                 \ 'pyjsbeautify_javascript',
-                \ 'jscs',
+                \ 'eslint_javascript',
                 \ 'standard_javascript'
                 \ ]
 endif

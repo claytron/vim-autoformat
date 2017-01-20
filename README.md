@@ -151,7 +151,7 @@ Here is a list of formatprograms that are supported by default, and thus will be
   The python version version is also supported by default, which does not need `nodejs` to run.
   Here is the link to the repository: https://github.com/einars/js-beautify.
 
-* `JSCS` for __Javascript__. http://jscs.info/
+* `eslint` for __Javascript__. http://eslint.org
 
 * `standard` for __Javascript__.
   It can be installed by running `npm install -g standard` (`nodejs` is required). No more configuration needed.
